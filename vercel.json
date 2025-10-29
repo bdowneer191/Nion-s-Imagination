@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "applications": {
+    "nion-s-imagination": {
+      "development": {
+        "fallback": "nion-s-imagination.vercel.app"
+      }
+    }
+  }
+}
