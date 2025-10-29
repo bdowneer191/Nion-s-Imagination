@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import sanityClient, { urlFor } from '../services/sanity';
 import { type Product } from '../types';
 
@@ -29,10 +28,8 @@ export default function ProductPage() {
 
   return (
     <>
-      <Helmet>
-        <title>{`${product.title} | Nion’s Imagination`}</title>
-        <meta name="description" content={product.shortDescription} />
-      </Helmet>
+      <title>{`${product.title} | Nion’s Imagination`}</title>
+      <meta name="description" content={product.shortDescription} />
       <article className="max-w-4xl mx-auto">
         <header className="mb-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">{product.title}</h1>
