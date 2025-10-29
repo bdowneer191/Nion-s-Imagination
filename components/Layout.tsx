@@ -21,7 +21,7 @@ export default function Layout() {
         <>
           <title>{settings.siteTitle}</title>
           <meta name="description" content={settings.siteDescription} />
-          {settings.analyticsHeadCode && <script>{settings.analyticsHeadCode}</script>}
+          {settings.analyticsHeadCode && <script dangerouslySetInnerHTML={{ __html: settings.analyticsHeadCode }} />}
           {settings.analyticsBodyCode && <script dangerouslySetInnerHTML={{ __html: `
             (function() {
               var script = document.createElement('script');

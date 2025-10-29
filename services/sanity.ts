@@ -4,7 +4,7 @@ import imageUrlBuilder from '@sanity/image-url';
 import type { SanityImage } from '../types';
 
 // Fix: Use optional chaining to safely access VITE_SANITY_PROJECT_ID from import.meta.env, preventing a TypeError if env is undefined.
-const projectId = (import.meta as any).env?.VITE_SANITY_PROJECT_ID || 'YOUR_PROJECT_ID';
+const projectId = 'arkn5ey7';
 
 const client = createClient({
   projectId: projectId,
